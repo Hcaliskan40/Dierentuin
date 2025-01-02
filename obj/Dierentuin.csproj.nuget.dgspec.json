@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Dierentuin.csproj": {}
+    "/Users/hamzacaliskan/RiderProjects/Dierentuin/Dierentuin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Dierentuin.csproj": {
+    "/Users/hamzacaliskan/RiderProjects/Dierentuin/Dierentuin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Dierentuin.csproj",
+        "projectUniqueName": "/Users/hamzacaliskan/RiderProjects/Dierentuin/Dierentuin.csproj",
         "projectName": "Dierentuin",
-        "projectPath": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Dierentuin.csproj",
-        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\obj\\",
+        "projectPath": "/Users/hamzacaliskan/RiderProjects/Dierentuin/Dierentuin.csproj",
+        "packagesPath": "/Users/hamzacaliskan/.nuget/packages/",
+        "outputPath": "/Users/hamzacaliskan/RiderProjects/Dierentuin/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/hamzacaliskan/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,6 +44,10 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[9.0.0, )"
             },
@@ -76,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

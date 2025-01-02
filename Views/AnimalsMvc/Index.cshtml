@@ -1,0 +1,33 @@
+@model IEnumerable<Dierentuin.Models.Animal>
+
+    <h2>Animals</h2>
+    <a asp-action="Create" class="btn btn-primary mb-3">Add New Animal</a>
+
+    <table class="table table-striped">
+    <thead>
+    <tr>
+    <th>Name</th>
+    <th>Species</th>
+    <th>Size</th>
+    <th>Dietary Class</th>
+    <th>Activity Pattern</th>
+    <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var animal in Model)
+{
+    <tr>
+        <td>@animal.Name</td>
+        <td>@animal.Species</td>
+        <td>@animal.Size</td>
+        <td>@animal.DietaryClass</td>
+        <td>@animal.ActivityPattern</td>
+        <td>
+        <a asp-action="Edit" asp-route-id="@animal.Id" class="btn btn-warning">Edit</a>
+        <a asp-action="Delete" asp-route-id="@animal.Id" class="btn btn-danger">Delete</a>
+        </td>
+        </tr>
+}
+</tbody>
+    </table>

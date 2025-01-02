@@ -1,0 +1,23 @@
+@model IEnumerable<Dierentuin.Models.Animal>
+
+    <h1>Animals</h1>
+
+    <table class="table">
+    <thead>
+    <tr>
+    <th>Name</th>
+    <th>Species</th>
+    <th>Size</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var animal in Model)
+{
+    <tr>
+        <td>@animal.Name</td>
+        <td>@animal.Species</td>
+        <td>@animal.Size</td>
+        </tr>
+}
+</tbody>
+    </table>
