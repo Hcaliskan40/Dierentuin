@@ -5067,24 +5067,27 @@
     ]
   },
   "packageFolders": {
-    "/Users/hamzacaliskan/.nuget/packages/": {}
+    "C:\\Users\\Hp\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hamzacaliskan/RiderProjects/Dierentuin/Dierentuin.csproj",
+      "projectUniqueName": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Dierentuin.csproj",
       "projectName": "Dierentuin",
-      "projectPath": "/Users/hamzacaliskan/RiderProjects/Dierentuin/Dierentuin.csproj",
-      "packagesPath": "/Users/hamzacaliskan/.nuget/packages/",
-      "outputPath": "/Users/hamzacaliskan/RiderProjects/Dierentuin/obj/",
+      "projectPath": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Dierentuin.csproj",
+      "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/hamzacaliskan/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5142,7 +5145,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
