@@ -3,30 +3,46 @@
     public class Animal
     {
         public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Species { get; set; } = string.Empty;
 
-        public string Name { get; set; }
-        public string Species { get; set; }
-        public int Age { get; set; }
+        // Categorie van het dier (optioneel)
+        public int? CategoryId { get; set; }
+        public Category? Category { get; set; }
 
-        // Enums voor HabitatType en SecurityLevel
-        public HabitatType HabitatType { get; set; }
-        public SecurityLevel SecurityLevel { get; set; }
+        // Grootte van het dier (enum)
+        public SizeEnum Size { get; set; }
+
+        // Voedingsklasse van het dier (enum)
+        public DietaryClassEnum DietaryClass { get; set; }
+
+        // Activiteitspatroon van het dier (enum)
+        public ActivityPatternEnum ActivityPattern { get; set; }
     }
 
-    // Enum voor HabitatType
-    public enum HabitatType
+    public enum SizeEnum
     {
-        Forest,
-        Desert,
-        Savannah,
-        Ocean
-    }
-
-    // Enum voor SecurityLevel
-    public enum SecurityLevel
-    {
-        Low,
+        Microscopic,
+        VerySmall,
+        Small,
         Medium,
-        High
+        Large,
+        VeryLarge
+    }
+
+    public enum DietaryClassEnum
+    {
+        Carnivore,
+        Herbivore,
+        Omnivore,
+        Insectivore,
+        Piscivore
+    }
+
+    public enum ActivityPatternEnum
+    {
+        Diurnal,
+        Nocturnal,
+        Cathemeral
     }
 }
