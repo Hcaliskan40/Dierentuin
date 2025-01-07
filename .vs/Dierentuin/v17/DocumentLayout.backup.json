@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\controllers\\enclosurescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:controllers\\enclosurescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hp\\source\\repos\\Dierentuin\\Migrations\\20250107144433_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250107144433_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\views\\animals\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:views\\animals\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,36 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EnclosuresController.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\EnclosuresController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EnclosuresController.cs",
-              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\EnclosuresController.cs",
-              "RelativeToolTip": "Controllers\\EnclosuresController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAIwDIAAAAzAAAAAAAAAA==",
+              "Title": "20250107144433_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Migrations\\20250107144433_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250107144433_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Migrations\\20250107144433_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20250107144433_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T14:02:00.846Z",
+              "WhenOpened": "2025-01-07T14:44:34.082Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\Animals\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animals\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\Animals\\Index.cshtml",
+              "RelativeToolTip": "Views\\Animals\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-07T14:25:57.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T14:01:56.802Z",
+              "WhenOpened": "2025-01-07T14:25:37.277Z",
               "EditorCaption": ""
             }
           ]
