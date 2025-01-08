@@ -44,12 +44,20 @@ namespace Dierentuin.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Animals.Add(animal);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index)); // Redirect to Index
+                try
+                {
+                    _context.Animals.Add(animal);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index)); // Redirect to Index
+                }
+                catch (Exception ex)
+                {
+                    // Log the error if needed
+                    Console.WriteLine("Error saving to database: " + ex.Message);
+                }
             }
 
-            // If the model is not valid, repopulate the dropdowns
+            // Repopulate the dropdowns in case of validation errors
             ViewBag.Categories = new SelectList(_context.Categories, "Id", "Name", animal.CategoryId);
             ViewBag.Sizes = new SelectList(Enum.GetValues(typeof(SizeEnum)), animal.Size);
             ViewBag.DietaryClasses = new SelectList(Enum.GetValues(typeof(DietaryClassEnum)), animal.DietaryClass);
