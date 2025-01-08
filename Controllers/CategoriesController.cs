@@ -20,7 +20,7 @@ namespace Dierentuin.Controllers
         }
 
         // GET: Categories
-        public async Task<IActionResult> Index(string searchCategory)
+        public async Task<IActionResult> Index(string searchCategory, bool? isActive)
         {
             var categories = from c in _context.Categories
                              select c;
@@ -30,8 +30,13 @@ namespace Dierentuin.Controllers
                 categories = categories.Where(c => c.Name.Contains(searchCategory));
             }
 
-            // Pass the search term to the view as part of ViewData or the model
+            if (isActive.HasValue)
+            {
+                categories = categories.Where(c => c.IsActive == isActive.Value);
+            }
+
             ViewData["SearchCategory"] = searchCategory;
+            ViewData["IsActive"] = isActive;
 
             return View(await categories.ToListAsync());
         }
@@ -68,7 +73,7 @@ namespace Dierentuin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name")] Category category)
+        public async Task<IActionResult> Create([Bind("Id,Name,IsActive")] Category category)
         {
             if (ModelState.IsValid)
             {
@@ -100,7 +105,7 @@ namespace Dierentuin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name")] Category category)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,IsActive")] Category category)
         {
             if (id != category.Id)
             {
