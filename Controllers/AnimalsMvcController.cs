@@ -39,10 +39,16 @@ namespace Dierentuin.Controllers
             {
                 _context.Animals.Add(animal);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index)); // Redirect to Index
             }
+
+            // If the model is not valid, repopulate the dropdowns
             ViewBag.Categories = new SelectList(_context.Categories, "Id", "Name", animal.CategoryId);
-            return View(animal);
+            ViewBag.Sizes = new SelectList(Enum.GetValues(typeof(SizeEnum)), animal.Size);
+            ViewBag.DietaryClasses = new SelectList(Enum.GetValues(typeof(DietaryClassEnum)), animal.DietaryClass);
+            ViewBag.ActivityPatterns = new SelectList(Enum.GetValues(typeof(ActivityPatternEnum)), animal.ActivityPattern);
+
+            return View(animal); // Return the same view with validation errors
         }
 
         // Edit - GET
@@ -54,9 +60,18 @@ namespace Dierentuin.Controllers
             {
                 return NotFound();
             }
+
+            // Populate ViewBag with Enum values for dropdowns
             ViewBag.Categories = new SelectList(_context.Categories, "Id", "Name", animal.CategoryId);
+
+            // Pass enum values for the dropdowns
+            ViewBag.Sizes = new SelectList(Enum.GetValues(typeof(SizeEnum)).Cast<SizeEnum>(), animal.Size);
+            ViewBag.DietaryClasses = new SelectList(Enum.GetValues(typeof(DietaryClassEnum)).Cast<DietaryClassEnum>(), animal.DietaryClass);
+            ViewBag.ActivityPatterns = new SelectList(Enum.GetValues(typeof(ActivityPatternEnum)).Cast<ActivityPatternEnum>(), animal.ActivityPattern);
+
             return View(animal);
         }
+
 
         // Edit - POST
         [HttpPost]
@@ -70,13 +85,39 @@ namespace Dierentuin.Controllers
 
             if (ModelState.IsValid)
             {
-                _context.Update(animal);
-                await _context.SaveChangesAsync();
+                try
+                {
+                    _context.Update(animal);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!AnimalExists(animal.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
                 return RedirectToAction(nameof(Index));
             }
+
+            // Repopulate ViewBag in case of validation errors
             ViewBag.Categories = new SelectList(_context.Categories, "Id", "Name", animal.CategoryId);
+            ViewBag.Sizes = new SelectList(Enum.GetValues(typeof(SizeEnum)).Cast<SizeEnum>(), animal.Size);
+            ViewBag.DietaryClasses = new SelectList(Enum.GetValues(typeof(DietaryClassEnum)).Cast<DietaryClassEnum>(), animal.DietaryClass);
+            ViewBag.ActivityPatterns = new SelectList(Enum.GetValues(typeof(ActivityPatternEnum)).Cast<ActivityPatternEnum>(), animal.ActivityPattern);
+
             return View(animal);
         }
+
+        private bool AnimalExists(int id)
+        {
+            return _context.Animals.Any(e => e.Id == id);
+        }
+
 
         // Delete - GET
         [HttpGet]
