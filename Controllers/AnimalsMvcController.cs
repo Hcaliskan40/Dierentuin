@@ -26,7 +26,14 @@ namespace Dierentuin.Controllers
         [HttpGet]
         public IActionResult Create()
         {
+            // Populating ViewBag for dropdowns, including enums
             ViewBag.Categories = new SelectList(_context.Categories, "Id", "Name");
+
+            // Populating enum values for dropdowns (Size, DietaryClass, ActivityPattern)
+            ViewBag.Sizes = new SelectList(Enum.GetValues(typeof(SizeEnum)), SizeEnum.Small);
+            ViewBag.DietaryClasses = new SelectList(Enum.GetValues(typeof(DietaryClassEnum)), DietaryClassEnum.Herbivore);
+            ViewBag.ActivityPatterns = new SelectList(Enum.GetValues(typeof(ActivityPatternEnum)), ActivityPatternEnum.Nocturnal);
+
             return View();
         }
 
