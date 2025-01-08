@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\views\\animalsmvc\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:views\\animalsmvc\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\controllers\\animalsmvccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:controllers\\animalsmvccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\views\\animalsmvc\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:views\\animalsmvc\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\views\\animalsmvc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:views\\animalsmvc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\controllers\\animalsmvccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:controllers\\animalsmvccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,37 +41,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\AnimalsMvc\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\AnimalsMvc\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\AnimalsMvc\\Delete.cshtml*",
+              "RelativeToolTip": "Views\\AnimalsMvc\\Delete.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T15:42:41.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AnimalsMvcController.cs",
               "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\AnimalsMvcController.cs",
               "RelativeDocumentMoniker": "Controllers\\AnimalsMvcController.cs",
               "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\AnimalsMvcController.cs",
               "RelativeToolTip": "Controllers\\AnimalsMvcController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAQwMAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-08T15:16:10.19Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AnimalsController.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\AnimalsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AnimalsController.cs",
-              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\AnimalsController.cs",
-              "RelativeToolTip": "Controllers\\AnimalsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T15:12:21.267Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
@@ -80,7 +84,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\AnimalsMvc\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\AnimalsMvc\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\AnimalsMvc\\Create.cshtml",
+              "RelativeToolTip": "Views\\AnimalsMvc\\Create.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-07T14:46:03.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AnimalsController.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\AnimalsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AnimalsController.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\AnimalsController.cs",
+              "RelativeToolTip": "Controllers\\AnimalsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T15:12:21.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Animal.cs",
               "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Models\\Animal.cs",
               "RelativeDocumentMoniker": "Models\\Animal.cs",
@@ -93,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "dbo.Animals [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Dierentuin3/True/SqlTable/dbo.Animals.sql",
               "ToolTip": "dbo.Animals [Data]",
@@ -103,20 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\AnimalsMvc\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\AnimalsMvc\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\AnimalsMvc\\Create.cshtml*",
-              "RelativeToolTip": "Views\\AnimalsMvc\\Create.cshtml*",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-07T14:46:03.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\AnimalsMvc\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\AnimalsMvc\\Edit.cshtml",

@@ -10,10 +10,15 @@ namespace Dierentuin.Controllers
     {
         private readonly ApplicationDbContext _context;
 
-        public AnimalsMvcController(ApplicationDbContext context)
+        private readonly ILogger<AnimalsMvcController> _logger;
+
+        public AnimalsMvcController(ApplicationDbContext context, ILogger<AnimalsMvcController> logger)
         {
             _context = context;
+            _logger = logger;
         }
+
+
 
         // Index - Lijst van alle dieren
         public async Task<IActionResult> Index()
@@ -133,17 +138,29 @@ namespace Dierentuin.Controllers
             return _context.Animals.Any(e => e.Id == id);
         }
 
-
         // Delete - GET
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
-            var animal = await _context.Animals.FindAsync(id);
-            if (animal == null)
+            try
             {
-                return NotFound();
+                var animal = await _context.Animals
+                    .Include(a => a.Category) // Include related data if necessary
+                    .FirstOrDefaultAsync(a => a.Id == id);
+
+                if (animal == null)
+                {
+                    _logger.LogWarning($"Delete GET: Animal with ID {id} not found.");
+                    return NotFound();
+                }
+
+                return View(animal);
             }
-            return View(animal);
+            catch (Exception ex)
+            {
+                _logger.LogError($"Delete GET: Error fetching animal with ID {id}. Exception: {ex.Message}");
+                return StatusCode(500, "Internal server error.");
+            }
         }
 
         // Delete - POST
@@ -151,13 +168,27 @@ namespace Dierentuin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var animal = await _context.Animals.FindAsync(id);
-            if (animal != null)
+            try
             {
+                var animal = await _context.Animals.FindAsync(id);
+
+                if (animal == null)
+                {
+                    _logger.LogWarning($"Delete POST: Animal with ID {id} not found for deletion.");
+                    return NotFound();
+                }
+
                 _context.Animals.Remove(animal);
                 await _context.SaveChangesAsync();
+
+                _logger.LogInformation($"Delete POST: Animal with ID {id} deleted successfully.");
+                return RedirectToAction(nameof(Index));
             }
-            return RedirectToAction(nameof(Index));
+            catch (Exception ex)
+            {
+                _logger.LogError($"Delete POST: Error deleting animal with ID {id}. Exception: {ex.Message}");
+                return StatusCode(500, "Internal server error.");
+            }
         }
     }
-}
+    }
