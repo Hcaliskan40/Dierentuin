@@ -1,6 +1,13 @@
 @model IEnumerable<Dierentuin.Models.Enclosure>
 
 <h2>Enclosures</h2>
+
+<form method="get" asp-action="Index" class="mb-3">
+    <div class="input-group">
+        <input type="text" name="search" class="form-control" placeholder="Search Enclosures..." />
+        <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+</form>
 <a asp-action="Create" class="btn btn-primary mb-3">Add New Enclosure</a>
 
 <table class="table table-striped">

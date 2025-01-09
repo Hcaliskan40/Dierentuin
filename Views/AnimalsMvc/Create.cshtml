@@ -37,6 +37,12 @@
         <select asp-for="ActivityPattern" asp-items="ViewBag.ActivityPatterns" class="form-control"></select>
         <span asp-validation-for="ActivityPattern" class="text-danger"></span>
     </div>
+    
+    <div class="form-group">
+        <label asp-for="EnclosureId"></label>
+        <select asp-for="EnclosureId" asp-items="ViewBag.Enclosures" class="form-control"></select>
+        <span asp-validation-for="EnclosureId" class="text-danger"></span>
+    </div>
 
     <button type="submit" class="btn btn-primary">Save Animal</button>
 </form>

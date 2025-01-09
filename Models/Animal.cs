@@ -12,7 +12,11 @@
         public SizeEnum Size { get; set; }
         public DietaryClassEnum DietaryClass { get; set; }
         public ActivityPatternEnum ActivityPattern { get; set; }
+
+        public int? EnclosureId { get; set; } // Nullable zodat we het later kunnen invullen
+        public Enclosure? Enclosure { get; set; }  // Relatie naar het Enclosure-model
     }
+    
 
     public enum SizeEnum
     {
