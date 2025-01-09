@@ -1,0 +1,54 @@
+@model Dierentuin.Models.Enclosure
+
+<h2>Enclosure Details</h2>
+
+<div class="card">
+    <div class="card-header bg-info text-white">
+        <strong>Enclosure Information</strong>
+    </div>
+    <div class="card-body">
+        <p><strong>Name:</strong> @Model.Name</p>
+        <p><strong>Climate:</strong> @Model.Climate</p>
+        <p><strong>Habitat Type:</strong> @Model.HabitatType</p>
+        <p><strong>Security Level:</strong> @Model.SecurityLevel</p>
+        <p><strong>Size:</strong> @Model.Size m²</p>
+        <p><strong>Number of Animals:</strong> @Model.Animals.Count</p>
+    </div>
+</div>
+
+@if (Model.Animals.Any())
+{
+    <h3>Animals in this Enclosure</h3>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Species</th>
+            <th>Category</th>
+            <th>Size</th>
+            <th>Dietary Class</th>
+            <th>Activity Pattern</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var animal in Model.Animals)
+        {
+            <tr>
+                <td>@animal.Name</td>
+                <td>@animal.Species</td>
+                <td>@animal.Category?.Name</td>
+                <td>@animal.Size</td>
+                <td>@animal.DietaryClass</td>
+                <td>@animal.ActivityPattern</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No animals are currently assigned to this enclosure.</p>
+}
+
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>

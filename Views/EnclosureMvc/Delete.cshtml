@@ -1,0 +1,29 @@
+@model Dierentuin.Models.Enclosure
+
+    <h2>Delete Enclosure</h2>
+    <div class="alert alert-warning">
+    <h4>Are you sure you want to delete this enclosure?</h4>
+    <p>This action cannot be undone.</p>
+    </div>
+
+    <div class="card">
+    <div class="card-header bg-danger text-white">
+    <strong>Enclosure Details</strong>
+    </div>
+    <div class="card-body">
+    <p><strong>Name:</strong> @Model.Name</p>
+    <p><strong>Climate:</strong> @Model.Climate</p>
+    <p><strong>Habitat Type:</strong> @Model.HabitatType</p>
+    <p><strong>Security Level:</strong> @Model.SecurityLevel</p>
+    <p><strong>Size:</strong> @Model.Size m²</p>
+    <p><strong>Animals:</strong> @Model.Animals.Count</p>
+    </div>
+    </div>
+
+    <div class="mt-4">
+    <form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+    </div>

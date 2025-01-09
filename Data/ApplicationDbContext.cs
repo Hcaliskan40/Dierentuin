@@ -12,6 +12,9 @@ namespace Dierentuin.Data
         // DbSets voor de entiteiten
         public DbSet<Animal> Animals { get; set; }
         public DbSet<Category> Categories { get; set; }
+        
+        public DbSet<Enclosure> Enclosures { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
