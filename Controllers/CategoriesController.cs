@@ -38,10 +38,8 @@ namespace Dierentuin.Controllers
             ViewData["SearchCategory"] = searchCategory;
             ViewData["IsActive"] = isActive;
 
-            return View(await categories.ToListAsync());
+            return View(await categories.Include(c => c.Animals).ToListAsync());
         }
-
-
 
         // GET: Categories/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -69,8 +67,6 @@ namespace Dierentuin.Controllers
         }
 
         // POST: Categories/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,IsActive")] Category category)
@@ -92,20 +88,24 @@ namespace Dierentuin.Controllers
                 return NotFound();
             }
 
-            var category = await _context.Categories.FindAsync(id);
+            var category = await _context.Categories
+                .Include(c => c.Animals) // Fetch associated animals
+                .FirstOrDefaultAsync(c => c.Id == id);
+
             if (category == null)
             {
                 return NotFound();
             }
+
+            ViewData["Animals"] = new MultiSelectList(_context.Animals, "Id", "Name", category.Animals.Select(a => a.Id));
+
             return View(category);
         }
 
         // POST: Categories/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,IsActive")] Category category)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,IsActive")] Category category, int[] selectedAnimals)
         {
             if (id != category.Id)
             {
@@ -116,8 +116,25 @@ namespace Dierentuin.Controllers
             {
                 try
                 {
-                    _context.Update(category);
-                    await _context.SaveChangesAsync();
+                    var existingCategory = await _context.Categories
+                        .Include(c => c.Animals)
+                        .FirstOrDefaultAsync(c => c.Id == id);
+
+                    if (existingCategory != null)
+                    {
+                        existingCategory.Name = category.Name;
+                        existingCategory.IsActive = category.IsActive;
+
+                        existingCategory.Animals.Clear();
+                        var animals = await _context.Animals.Where(a => selectedAnimals.Contains(a.Id)).ToListAsync();
+                        foreach (var animal in animals)
+                        {
+                            existingCategory.Animals.Add(animal);
+                        }
+
+                        _context.Update(existingCategory);
+                        await _context.SaveChangesAsync();
+                    }
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -132,6 +149,8 @@ namespace Dierentuin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+
+            ViewData["Animals"] = new MultiSelectList(_context.Animals, "Id", "Name", selectedAnimals);
             return View(category);
         }
 
@@ -144,7 +163,9 @@ namespace Dierentuin.Controllers
             }
 
             var category = await _context.Categories
+                .Include(c => c.Animals)
                 .FirstOrDefaultAsync(m => m.Id == id);
+
             if (category == null)
             {
                 return NotFound();
@@ -158,9 +179,10 @@ namespace Dierentuin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var category = await _context.Categories.FindAsync(id);
+            var category = await _context.Categories.Include(c => c.Animals).FirstOrDefaultAsync(c => c.Id == id);
             if (category != null)
             {
+                category.Animals.Clear(); // Clear associated animals
                 _context.Categories.Remove(category);
             }
 
