@@ -24,6 +24,10 @@
         public ActionEnum SunsetAction { get; set; }
         public ActionEnum FeedingTime { get; set; }
 
+        // Relatie met Zoo
+        public int? ZooId { get; set; }       // Foreign key naar de Zoo
+        public Zoo? Zoo { get; set; }
+
         public bool CheckConstraints()
         {
             if (SpaceRequirement > 10 && SecurityRequirement != SecurityLevelEnum.High)

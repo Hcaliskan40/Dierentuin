@@ -1,0 +1,19 @@
+﻿@model Dierentuin.Models.Zoo
+
+@{
+    ViewData["Title"] = "Zoo Details";
+}
+
+<h1>@Model.Name</h1>
+
+<div class="details-container">
+    <p><strong>Name:</strong> @Model.Name</p>
+    <!-- You can add more details here as necessary -->
+
+    <div class="button-group">
+        <a href="@Url.Action("Edit", new { id = Model.Id })" class="btn btn-primary">Edit</a>
+        <a href="@Url.Action("Delete", new { id = Model.Id })" class="btn btn-danger">Delete</a>
+        <a href="@Url.Action("Index")" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>
+

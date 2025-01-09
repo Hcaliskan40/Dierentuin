@@ -14,7 +14,9 @@ namespace Dierentuin.Models
 
         // Bijhouden van toegewezen dieren aan de categorie
         public List<Animal> Animals { get; set; } = new List<Animal>();
-
+        // Relatie met Zoo
+        public int ZooId { get; set; } // Foreign key
+        public Zoo Zoo { get; set; }   // Navigation property
         // Hulpmethoden
         public void AddAnimal(Animal animal)
         {

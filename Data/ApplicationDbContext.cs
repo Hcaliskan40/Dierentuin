@@ -9,6 +9,7 @@ namespace Dierentuin.Data
 
         public DbSet<Animal> Animals { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Zoo> Zoos { get; set; } = default!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -24,14 +25,39 @@ namespace Dierentuin.Data
             // Relatie voor prooi (self-referencing)
             modelBuilder.Entity<Animal>()
                 .HasMany(a => a.Prey)
-                .WithOne(p => p.Predator) // 'Predator' is de eigenschap in de prooi die naar de jager wijst
-                .HasForeignKey(a => a.PredatorId) // 'PredatorId' is de foreign key in het dier
+                .WithOne(p => p.Predator)
+                .HasForeignKey(a => a.PredatorId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            // Relatie tussen Zoo en Animals
+            modelBuilder.Entity<Zoo>()
+                .HasMany(z => z.Animals)
+                .WithOne(a => a.Zoo)
+                .HasForeignKey(a => a.ZooId)
+                .OnDelete(DeleteBehavior.Cascade); // Als een Zoo verwijderd wordt, worden de dieren ook verwijderd
+
+            // Relatie tussen Zoo en Categories
+            modelBuilder.Entity<Zoo>()
+                .HasMany(z => z.Categories)
+                .WithOne(c => c.Zoo) // We don't need a navigation property in Category for Zoo
+                .HasForeignKey("ZooId")  // Explicitly define the foreign key for the Zoo-Categories relationship
+                .OnDelete(DeleteBehavior.Cascade); // Choose your delete behavior
+            //Zoo en Enclosure
+            modelBuilder.Entity<Enclosure>()
+           .HasOne(e => e.Zoo)
+           .WithMany(z => z.Enclosures)
+           .HasForeignKey(e => e.ZooId);
+
+            // Seeding Zoo data (Only one zoo with Id = 1)
+            modelBuilder.Entity<Zoo>().HasData(
+                new Zoo { Id = 1, Name = "Safari Park" },
+                new Zoo { Id = 2, Name = "Wildlife Reserve" }
+            );
 
             // Categorieën seeding
             modelBuilder.Entity<Category>().HasData(
-                new Category { Id = 1, Name = "Mammals", IsActive = true },
-                new Category { Id = 2, Name = "Reptiles", IsActive = true }
+                new Category { Id = 1, Name = "Mammals", ZooId = 1, IsActive = true },
+                new Category { Id = 2, Name = "Reptiles", ZooId = 1, IsActive = true }
             );
 
             // Dieren seeding
@@ -42,6 +68,7 @@ namespace Dierentuin.Data
                     Name = "Lion",
                     Species = "Panthera leo",
                     CategoryId = 1,
+                    ZooId = 1, // Verwijzing naar een dierentuin
                     Size = SizeEnum.Large,
                     DietaryClass = DietaryClassEnum.Carnivore,
                     ActivityPattern = ActivityPatternEnum.Diurnal,
@@ -57,6 +84,7 @@ namespace Dierentuin.Data
                     Name = "Python",
                     Species = "Python regius",
                     CategoryId = 2,
+                    ZooId = 1, // Verwijzing naar een dierentuin
                     Size = SizeEnum.Medium,
                     DietaryClass = DietaryClassEnum.Carnivore,
                     ActivityPattern = ActivityPatternEnum.Nocturnal,
@@ -72,6 +100,7 @@ namespace Dierentuin.Data
                     Name = "Deer",
                     Species = "Cervidae",
                     CategoryId = 1,
+                    ZooId = 1, // Verwijzing naar een dierentuin
                     Size = SizeEnum.Medium,
                     DietaryClass = DietaryClassEnum.Herbivore,
                     ActivityPattern = ActivityPatternEnum.Diurnal,
@@ -87,6 +116,7 @@ namespace Dierentuin.Data
                     Name = "Tiger",
                     Species = "Panthera tigris",
                     CategoryId = 1,
+                    ZooId = 1, // Verwijzing naar een dierentuin
                     Size = SizeEnum.Large,
                     DietaryClass = DietaryClassEnum.Carnivore,
                     ActivityPattern = ActivityPatternEnum.Nocturnal,
@@ -99,7 +129,7 @@ namespace Dierentuin.Data
                 }
             );
         }
-
     }
-}
+    }
+
 

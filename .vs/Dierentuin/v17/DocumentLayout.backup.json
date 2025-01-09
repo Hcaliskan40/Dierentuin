@@ -3,28 +3,53 @@
   "WorkspaceRootPath": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\views\\animalsmvc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:views\\animalsmvc\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\views\\zoos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:views\\zoos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\controllers\\animalsmvccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:controllers\\animalsmvccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\views\\zoos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:views\\zoos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\controllers\\zooscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:controllers\\zooscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\models\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:models\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\migrations\\20250109234416_addzooidtoenclosure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:migrations\\20250109234416_addzooidtoenclosure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\views\\animalsmvc\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:views\\animalsmvc\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\models\\zoo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:models\\zoo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\views\\animalsmvc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:views\\animalsmvc\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\views\\zoos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:views\\zoos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hp\\AppData\\Local\\Temp\\n0kujdov..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\views\\zoos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:views\\zoos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\views\\zoos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:views\\zoos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hp\\AppData\\Local\\Temp\\n0kujdov..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Hp\\AppData\\Local\\Temp\\n0kujdov..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,79 +64,142 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
-              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "Controllers\\CategoriesController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ZoosController.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\ZoosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ZoosController.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\ZoosController.cs",
+              "RelativeToolTip": "Controllers\\ZoosController.cs",
+              "ViewState": "AgIAALkAAAAAAAAAAAAtwMoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T21:05:08.232Z",
+              "WhenOpened": "2025-01-09T23:37:07.318Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\AnimalsMvc\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\AnimalsMvc\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\AnimalsMvc\\Index.cshtml",
-              "RelativeToolTip": "Views\\AnimalsMvc\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAMAAAAAAAAAA==",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\Zoos\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Zoos\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\Zoos\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Zoos\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T20:43:45.253Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AnimalsMvcController.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\AnimalsMvcController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AnimalsMvcController.cs",
-              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\AnimalsMvcController.cs",
-              "RelativeToolTip": "Controllers\\AnimalsMvcController.cs",
-              "ViewState": "AgIAAOMAAAAAAAAAAAAAAPgAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T20:01:09.255Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Animal.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Models\\Animal.cs",
-              "RelativeDocumentMoniker": "Models\\Animal.cs",
-              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Models\\Animal.cs",
-              "RelativeToolTip": "Models\\Animal.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowBwAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T20:24:17.407Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\AnimalsMvc\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\AnimalsMvc\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\AnimalsMvc\\Delete.cshtml",
-              "RelativeToolTip": "Views\\AnimalsMvc\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T19:56:50.382Z",
+              "WhenOpened": "2025-01-09T23:02:27.453Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\AnimalsMvc\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\AnimalsMvc\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\AnimalsMvc\\Edit.cshtml",
-              "RelativeToolTip": "Views\\AnimalsMvc\\Edit.cshtml",
-              "ViewState": "AgIAABQAAAAAAAAAAAAqwC0AAAAKAAAAAAAAAA==",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\Zoos\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Zoos\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\Zoos\\Create.cshtml",
+              "RelativeToolTip": "Views\\Zoos\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T19:55:29.6Z",
+              "WhenOpened": "2025-01-09T23:02:04.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\Zoos\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Zoos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\Zoos\\Index.cshtml",
+              "RelativeToolTip": "Views\\Zoos\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-09T23:01:04.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20250109234416_AddZooIdToEnclosure.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Migrations\\20250109234416_AddZooIdToEnclosure.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250109234416_AddZooIdToEnclosure.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Migrations\\20250109234416_AddZooIdToEnclosure.cs",
+              "RelativeToolTip": "Migrations\\20250109234416_AddZooIdToEnclosure.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T23:44:17.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Zoo.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Models\\Zoo.cs",
+              "RelativeDocumentMoniker": "Models\\Zoo.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Models\\Zoo.cs",
+              "RelativeToolTip": "Models\\Zoo.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAswGIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T22:00:47.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAswH4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T23:06:34.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T23:13:40.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SQLQuery8.sql ",
+              "DocumentMoniker": "C:\\Users\\Hp\\AppData\\Local\\Temp\\n0kujdov..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\n0kujdov..sql",
+              "ToolTip": "SQLQuery8.sql ",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-01-09T23:29:41.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\Zoos\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Zoos\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\Zoos\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Zoos\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-09T23:02:58.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\Zoos\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Zoos\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\Zoos\\Details.cshtml",
+              "RelativeToolTip": "Views\\Zoos\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-09T23:02:38.733Z",
               "EditorCaption": ""
             }
           ]

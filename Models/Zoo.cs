@@ -5,8 +5,12 @@
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
 
+        public string? Location { get; set; }
+        public string? OpeningHours { get; set; }
+
         // Relationships with other models (e.g. animals, enclosures)
         public List<Animal> Animals { get; set; } = new List<Animal>();
+        public ICollection<Category> Categories { get; set; } = new List<Category>();
         public List<Enclosure> Enclosures { get; set; } = new List<Enclosure>();
 
         // Actions (Sunrise, Sunset, FeedingTime, CheckConstraints, AutoAssign)
@@ -91,5 +95,8 @@
         public double SpaceRequirement { get; set; }
         public SecurityLevelEnum SecurityLevel { get; set; }
         public List<Animal> Animals { get; set; } = new List<Animal>();
+        public int ZooId { get; set; }
+        public Zoo Zoo { get; set; }
+        public double SpaceAvailable { get; internal set; }
     }
 }

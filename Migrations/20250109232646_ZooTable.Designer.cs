@@ -3,6 +3,7 @@ using Dierentuin.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Dierentuin.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250109232646_ZooTable")]
+    partial class ZooTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -216,7 +219,7 @@ namespace Dierentuin.Migrations
                     b.Property<double>("SpaceRequirement")
                         .HasColumnType("float");
 
-                    b.Property<int>("ZooId")
+                    b.Property<int?>("ZooId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -302,13 +305,9 @@ namespace Dierentuin.Migrations
 
             modelBuilder.Entity("Dierentuin.Models.Enclosure", b =>
                 {
-                    b.HasOne("Dierentuin.Models.Zoo", "Zoo")
+                    b.HasOne("Dierentuin.Models.Zoo", null)
                         .WithMany("Enclosures")
-                        .HasForeignKey("ZooId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Zoo");
+                        .HasForeignKey("ZooId");
                 });
 
             modelBuilder.Entity("Dierentuin.Models.Animal", b =>

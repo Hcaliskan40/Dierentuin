@@ -1,0 +1,16 @@
+﻿@model Dierentuin.Models.Zoo
+
+@{
+    ViewData["Title"] = "Delete Zoo";
+}
+
+<h1>Delete Zoo</h1>
+
+<h4>Are you sure you want to delete the zoo @Model.Name?</h4>
+<p>This action cannot be undone.</p>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Yes, Delete</button>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">Cancel</a>
+</form>
