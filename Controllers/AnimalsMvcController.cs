@@ -138,6 +138,73 @@ namespace Dierentuin.Controllers
             return _context.Animals.Any(e => e.Id == id);
         }
 
+
+        // Action for Sunrise
+        public IActionResult Sunrise(int id)
+        {
+            var animal = _context.Animals.Find(id);
+            if (animal == null)
+            {
+                return NotFound();
+            }
+            // Logic to handle sunrise (whether the animal wakes up)
+            animal.ActivityPattern = ActivityPatternEnum.Diurnal;  // Example
+            _context.SaveChanges();
+            return RedirectToAction(nameof(Index));
+        }
+
+        // Action for Sunset
+        public IActionResult Sunset(int id)
+        {
+            var animal = _context.Animals.Find(id);
+            if (animal == null)
+            {
+                return NotFound();
+            }
+            // Logic to handle sunset (whether the animal sleeps)
+            animal.ActivityPattern = ActivityPatternEnum.Nocturnal;  // Example
+            _context.SaveChanges();
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult FeedingTime(int id)
+        {
+            var animal = _context.Animals.Find(id);
+            if (animal == null)
+            {
+                return NotFound();
+            }
+
+            // Logic to define feeding time behavior (what the animal eats)
+            string feedingInfo = $"{animal.Name} eats {animal.DietaryClass}.";
+            // In a more complex setup, you can implement food relationships with other animals here
+
+            ViewBag.FeedingInfo = feedingInfo;
+            return View(animal);
+        }
+
+        public IActionResult CheckConstraints(int id)
+        {
+            var animal = _context.Animals.Find(id);
+            if (animal == null)
+            {
+                return NotFound();
+            }
+
+            // Logic to check constraints
+            // Example: Check if the animal fits within the constraints (you can modify as per your rules)
+            bool satisfiesConstraints = true;
+
+            if (animal.Size == SizeEnum.Microscopic) // example constraint
+            {
+                satisfiesConstraints = false;
+            }
+
+            ViewBag.ConstraintsMessage = satisfiesConstraints ? "Constraints met!" : "Constraints niet voldaan!";
+            return View(animal);
+        }
+
+
         // Delete - GET
         [HttpGet]
         public async Task<IActionResult> Delete(int id)

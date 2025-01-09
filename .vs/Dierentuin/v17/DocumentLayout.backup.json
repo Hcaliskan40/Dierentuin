@@ -3,36 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\views\\categories\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:views\\categories\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\models\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:models\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\controllers\\animalsmvccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:controllers\\animalsmvccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\controllers\\animalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:controllers\\animalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|c:\\users\\hp\\source\\repos\\dierentuin\\dierentuin.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1661FEAB-DBD5-4DD5-B225-A1F0CABC5F1E}|Dierentuin.csproj|solutionrelative:dierentuin.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\Categories\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Categories\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\Categories\\Delete.cshtml*",
-              "RelativeToolTip": "Views\\Categories\\Delete.cshtml*",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAqwCIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-08T17:34:35.299Z",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Data\\ApplicationDbContext.cs*",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs*",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAuwGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T15:11:10.305Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\Categories\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Categories\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\Categories\\Edit.cshtml*",
-              "RelativeToolTip": "Views\\Categories\\Edit.cshtml*",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAqwCwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-08T17:34:09.461Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\Categories\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Categories\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\Categories\\Details.cshtml",
-              "RelativeToolTip": "Views\\Categories\\Details.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAqwCAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-08T17:28:09.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\Categories\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Categories\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Views\\Categories\\Index.cshtml",
-              "RelativeToolTip": "Views\\Categories\\Index.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-08T17:00:28.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
-              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "Controllers\\CategoriesController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T16:54:52.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "Models\\Category.cs",
-              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Models\\Category.cs",
-              "RelativeToolTip": "Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T16:45:09.226Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AnimalsMvcController.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\AnimalsMvcController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AnimalsMvcController.cs",
-              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\AnimalsMvcController.cs",
-              "RelativeToolTip": "Controllers\\AnimalsMvcController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T16:47:43.632Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Animal.cs",
               "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Models\\Animal.cs",
               "RelativeDocumentMoniker": "Models\\Animal.cs",
               "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Models\\Animal.cs",
               "RelativeToolTip": "Models\\Animal.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAmwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T14:18:30.974Z",
+              "WhenOpened": "2025-01-09T13:30:59.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AnimalsController.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\AnimalsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AnimalsController.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Controllers\\AnimalsController.cs",
+              "RelativeToolTip": "Controllers\\AnimalsController.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAiwIgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T14:46:41.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T14:38:54.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAAMUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T14:28:46.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dierentuin.csproj",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Dierentuin.csproj",
+              "RelativeDocumentMoniker": "Dierentuin.csproj",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\Dierentuin\\Dierentuin.csproj",
+              "RelativeToolTip": "Dierentuin.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-09T13:41:12.862Z",
               "EditorCaption": ""
             }
           ]

@@ -31,22 +31,42 @@ namespace Dierentuin.Migrations
                     b.Property<int>("DietaryClass")
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("FeedingTime")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<int?>("PredatorId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("SecurityRequirement")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int>("Size")
                         .HasColumnType("INTEGER");
+
+                    b.Property<double>("SpaceRequirement")
+                        .HasColumnType("REAL");
 
                     b.Property<string>("Species")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("SunriseAction")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("SunsetAction")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Animals");
+                    b.HasIndex("PredatorId");
+
+                    b.ToTable("Animals", (string)null);
 
                     b.HasData(
                         new
@@ -55,9 +75,14 @@ namespace Dierentuin.Migrations
                             ActivityPattern = 0,
                             CategoryId = 1,
                             DietaryClass = 0,
+                            FeedingTime = 0,
                             Name = "Lion",
+                            SecurityRequirement = 2,
                             Size = 4,
-                            Species = "Panthera leo"
+                            SpaceRequirement = 12.5,
+                            Species = "Panthera leo",
+                            SunriseAction = 0,
+                            SunsetAction = 1
                         },
                         new
                         {
@@ -65,9 +90,45 @@ namespace Dierentuin.Migrations
                             ActivityPattern = 1,
                             CategoryId = 2,
                             DietaryClass = 0,
+                            FeedingTime = 1,
                             Name = "Python",
+                            SecurityRequirement = 1,
                             Size = 3,
-                            Species = "Python regius"
+                            SpaceRequirement = 8.0,
+                            Species = "Python regius",
+                            SunriseAction = 1,
+                            SunsetAction = 0
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ActivityPattern = 0,
+                            CategoryId = 1,
+                            DietaryClass = 1,
+                            FeedingTime = 0,
+                            Name = "Deer",
+                            SecurityRequirement = 0,
+                            Size = 3,
+                            SpaceRequirement = 10.0,
+                            Species = "Cervidae",
+                            SunriseAction = 0,
+                            SunsetAction = 1
+                        },
+                        new
+                        {
+                            Id = 4,
+                            ActivityPattern = 1,
+                            CategoryId = 1,
+                            DietaryClass = 0,
+                            FeedingTime = 1,
+                            Name = "Tiger",
+                            PredatorId = 1,
+                            SecurityRequirement = 2,
+                            Size = 4,
+                            SpaceRequirement = 15.0,
+                            Species = "Panthera tigris",
+                            SunriseAction = 1,
+                            SunsetAction = 0
                         });
                 });
 
@@ -82,23 +143,24 @@ namespace Dierentuin.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
+                        .HasMaxLength(100)
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
 
                     b.HasData(
                         new
                         {
                             Id = 1,
-                            IsActive = false,
+                            IsActive = true,
                             Name = "Mammals"
                         },
                         new
                         {
                             Id = 2,
-                            IsActive = false,
+                            IsActive = true,
                             Name = "Reptiles"
                         });
                 });
@@ -107,9 +169,22 @@ namespace Dierentuin.Migrations
                 {
                     b.HasOne("Dierentuin.Models.Category", "Category")
                         .WithMany("Animals")
-                        .HasForeignKey("CategoryId");
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.HasOne("Dierentuin.Models.Animal", "Predator")
+                        .WithMany("Prey")
+                        .HasForeignKey("PredatorId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Category");
+
+                    b.Navigation("Predator");
+                });
+
+            modelBuilder.Entity("Dierentuin.Models.Animal", b =>
+                {
+                    b.Navigation("Prey");
                 });
 
             modelBuilder.Entity("Dierentuin.Models.Category", b =>
