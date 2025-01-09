@@ -5,7 +5,7 @@
 Esad Hamza Caliskan 1206800
 Shailo Douglas S1157233
 
-#Inleiding
+# Inleiding
 Voor deze eindopdracht wordt een virtuele dierentuin ontwikkeld. Dit project maakt gebruik van de programmeertaal C# in combinatie met ASP.NET Core MVC om een webapplicatie te bouwen die dieren, verblijven en categorieën beheert. Het doel van de applicatie is om gebruikers in staat te stellen een dierentuin te organiseren en te beheren. Daarnaast moeten acties zoals zonsopgang, zonsondergang en etenstijd worden gesimuleerd.
 De opdracht is bedoeld om aan te tonen dat de basisprincipes van programmeren in C# beheerst worden, evenals het toepassen van frameworks en tools zoals Entity Framework Core en Razor Views.
 
@@ -15,7 +15,7 @@ De virtuele dierentuin biedt een intuïtieve manier om dieren, verblijven en cat
 Daarnaast bevat de applicatie een zoekfunctionaliteit waarmee gebruikers snel gegevens kunnen vinden. De applicatie is zowel functioneel als schaalbaar opgezet, zodat toekomstige uitbreidingen eenvoudig mogelijk zijn.
 
 
-#Functionaliteiten
+# Functionaliteiten
 Dierenbeheer
 In de applicatie is het mogelijk om dieren toe te voegen, te bewerken en te verwijderen. Elk dier heeft een aantal eigenschappen, zoals de naam, soort, grootte, voedingsklasse en activiteitspatroon. Deze eigenschappen worden opgeslagen in de database en zijn via de webinterface zichtbaar.
 Bij het toevoegen van een dier kan een categorie worden gekozen, bijvoorbeeld "roofdieren" of "planteneters". Daarnaast biedt de applicatie een zoekfunctie waarmee dieren snel kunnen worden gefilterd op naam, soort of categorie.
@@ -44,7 +44,7 @@ Deze controles worden automatisch uitgevoerd en helpen de gebruiker om fouten in
 
 
 
-#Technische Specificaties
+# Technische Specificaties
 De applicatie is gebouwd met ASP.NET Core MVC en maakt gebruik van de volgende technologieën:
 •	C# als programmeertaal.
 •	Entity Framework Core voor databasebeheer.
@@ -56,7 +56,7 @@ De applicatie is opgezet volgens het MVC-designpattern:
 2.	View: Zorgt voor de presentatie in de browser.
 3.	Controller: Verwerkt gebruikersacties en communiceert met het model en de view.
 
-#Testen
+# Testen
 De applicatie is uitgebreid getest op functionaliteit. Voor elk onderdeel zijn handmatige tests uitgevoerd:
 1.	Dierenbeheer: Het toevoegen, bewerken, verwijderen en zoeken van dieren is succesvol getest.
 2.	Verblijvenbeheer: Het beheren van verblijven en het uitvoeren van acties zoals zonsopgang en etenstijd werken correct.
@@ -65,5 +65,5 @@ De applicatie is uitgebreid getest op functionaliteit. Voor elk onderdeel zijn h
 
 
 
-#Conclusie
+# Conclusie
 De Virtuele Dierentuin is een volledige webapplicatie die voldoet aan alle gestelde eisen. De gebruiker kan eenvoudig dieren en verblijven beheren, acties uitvoeren en de dierentuin organiseren. Door het gebruik van ASP.NET Core MVC en Entity Framework is de applicatie schaalbaar en eenvoudig uitbreidbaar.
