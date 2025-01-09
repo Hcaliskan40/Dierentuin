@@ -31,6 +31,9 @@ namespace Dierentuin.Migrations
                     b.Property<int>("DietaryClass")
                         .HasColumnType("INTEGER");
 
+                    b.Property<int?>("EnclosureId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -45,6 +48,8 @@ namespace Dierentuin.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
+
+                    b.HasIndex("EnclosureId");
 
                     b.ToTable("Animals");
 
@@ -103,16 +108,52 @@ namespace Dierentuin.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Dierentuin.Models.Enclosure", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Climate")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("HabitatType")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("SecurityLevel")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<double>("Size")
+                        .HasColumnType("REAL");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Enclosures");
+                });
+
             modelBuilder.Entity("Dierentuin.Models.Animal", b =>
                 {
                     b.HasOne("Dierentuin.Models.Category", "Category")
                         .WithMany("Animals")
                         .HasForeignKey("CategoryId");
 
+                    b.HasOne("Dierentuin.Models.Enclosure", null)
+                        .WithMany("Animals")
+                        .HasForeignKey("EnclosureId");
+
                     b.Navigation("Category");
                 });
 
             modelBuilder.Entity("Dierentuin.Models.Category", b =>
+                {
+                    b.Navigation("Animals");
+                });
+
+            modelBuilder.Entity("Dierentuin.Models.Enclosure", b =>
                 {
                     b.Navigation("Animals");
                 });
