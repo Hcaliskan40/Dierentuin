@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;  // Voor dropdowns
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Dierentuin.Data;
 using Dierentuin.Models;
@@ -28,11 +28,9 @@ namespace Dierentuin.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            // Enum waarden vullen voor dropdowns
-            ViewBag.Climates = new SelectList(Enum.GetValues(typeof(ClimateEnum)), ClimateEnum.Temperate);
-            ViewBag.HabitatTypes = new SelectList(Enum.GetValues(typeof(HabitatTypeEnum)), HabitatTypeEnum.Forest);
-            ViewBag.SecurityLevels = new SelectList(Enum.GetValues(typeof(SecurityLevelEnum)), SecurityLevelEnum.Medium);
-
+            ViewBag.Climates = new SelectList(Enum.GetValues(typeof(ClimateEnum)));
+            ViewBag.HabitatTypes = new SelectList(Enum.GetValues(typeof(HabitatTypeEnum)));
+            ViewBag.SecurityLevels = new SelectList(Enum.GetValues(typeof(SecurityLevelEnum)));
             return View();
         }
 
@@ -43,24 +41,15 @@ namespace Dierentuin.Controllers
         {
             if (ModelState.IsValid)
             {
-                try
-                {
-                    _context.Enclosures.Add(enclosure);
-                    await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index)); // Redirect naar Index
-                }
-                catch (Exception ex)
-                {
-                    _logger.LogError($"Create POST: Error saving enclosure. Exception: {ex.Message}");
-                }
+                _context.Enclosures.Add(enclosure);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
             }
 
-            // Dropdowns opnieuw vullen bij validatiefouten
-            ViewBag.Climates = new SelectList(Enum.GetValues(typeof(ClimateEnum)), enclosure.Climate);
-            ViewBag.HabitatTypes = new SelectList(Enum.GetValues(typeof(HabitatTypeEnum)), enclosure.HabitatType);
-            ViewBag.SecurityLevels = new SelectList(Enum.GetValues(typeof(SecurityLevelEnum)), enclosure.SecurityLevel);
-
-            return View(enclosure); // Return dezelfde view met validatiefouten
+            ViewBag.Climates = new SelectList(Enum.GetValues(typeof(ClimateEnum)));
+            ViewBag.HabitatTypes = new SelectList(Enum.GetValues(typeof(HabitatTypeEnum)));
+            ViewBag.SecurityLevels = new SelectList(Enum.GetValues(typeof(SecurityLevelEnum)));
+            return View(enclosure);
         }
 
         // Edit - GET
@@ -73,11 +62,9 @@ namespace Dierentuin.Controllers
                 return NotFound();
             }
 
-            // Dropdowns vullen
             ViewBag.Climates = new SelectList(Enum.GetValues(typeof(ClimateEnum)), enclosure.Climate);
             ViewBag.HabitatTypes = new SelectList(Enum.GetValues(typeof(HabitatTypeEnum)), enclosure.HabitatType);
             ViewBag.SecurityLevels = new SelectList(Enum.GetValues(typeof(SecurityLevelEnum)), enclosure.SecurityLevel);
-
             return View(enclosure);
         }
 
@@ -93,30 +80,14 @@ namespace Dierentuin.Controllers
 
             if (ModelState.IsValid)
             {
-                try
-                {
-                    _context.Update(enclosure);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!EnclosureExists(enclosure.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+                _context.Update(enclosure);
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
 
-            // Dropdowns opnieuw vullen bij validatiefouten
             ViewBag.Climates = new SelectList(Enum.GetValues(typeof(ClimateEnum)), enclosure.Climate);
             ViewBag.HabitatTypes = new SelectList(Enum.GetValues(typeof(HabitatTypeEnum)), enclosure.HabitatType);
             ViewBag.SecurityLevels = new SelectList(Enum.GetValues(typeof(SecurityLevelEnum)), enclosure.SecurityLevel);
-
             return View(enclosure);
         }
 
@@ -124,25 +95,13 @@ namespace Dierentuin.Controllers
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
-            try
+            var enclosure = await _context.Enclosures.FindAsync(id);
+            if (enclosure == null)
             {
-                var enclosure = await _context.Enclosures
-                    .Include(e => e.Animals) // Include gerelateerde data
-                    .FirstOrDefaultAsync(e => e.Id == id);
-
-                if (enclosure == null)
-                {
-                    _logger.LogWarning($"Delete GET: Enclosure with ID {id} not found.");
-                    return NotFound();
-                }
-
-                return View(enclosure);
+                return NotFound();
             }
-            catch (Exception ex)
-            {
-                _logger.LogError($"Delete GET: Error fetching enclosure with ID {id}. Exception: {ex.Message}");
-                return StatusCode(500, "Internal server error.");
-            }
+
+            return View(enclosure);
         }
 
         // Delete - POST
@@ -150,32 +109,102 @@ namespace Dierentuin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            try
+            var enclosure = await _context.Enclosures.FindAsync(id);
+            if (enclosure == null)
             {
-                var enclosure = await _context.Enclosures.FindAsync(id);
-
-                if (enclosure == null)
-                {
-                    _logger.LogWarning($"Delete POST: Enclosure with ID {id} not found for deletion.");
-                    return NotFound();
-                }
-
-                _context.Enclosures.Remove(enclosure);
-                await _context.SaveChangesAsync();
-
-                _logger.LogInformation($"Delete POST: Enclosure with ID {id} deleted successfully.");
-                return RedirectToAction(nameof(Index));
+                return NotFound();
             }
-            catch (Exception ex)
-            {
-                _logger.LogError($"Delete POST: Error deleting enclosure with ID {id}. Exception: {ex.Message}");
-                return StatusCode(500, "Internal server error.");
-            }
+
+            _context.Enclosures.Remove(enclosure);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
-        private bool EnclosureExists(int id)
+        // Sunrise
+        public async Task<IActionResult> Sunrise(int id)
         {
-            return _context.Enclosures.Any(e => e.Id == id);
+            var enclosure = await _context.Enclosures
+                .Include(e => e.Animals)
+                .FirstOrDefaultAsync(e => e.Id == id);
+
+            if (enclosure == null)
+            {
+                return NotFound();
+            }
+
+            var sunriseStatus = enclosure.Animals.Select(animal => new
+            {
+                Name = animal.Name,
+                Status = animal.ActivityPattern switch
+                {
+                    ActivityPatternEnum.Diurnal => "Waking Up",
+                    ActivityPatternEnum.Nocturnal => "Going to Sleep",
+                    _ => "Always Active"
+                }
+            });
+
+            ViewBag.SunriseStatus = sunriseStatus;
+
+            return View("ActionResult", enclosure);
+        }
+
+        // Sunset
+        public async Task<IActionResult> Sunset(int id)
+        {
+            var enclosure = await _context.Enclosures
+                .Include(e => e.Animals)
+                .FirstOrDefaultAsync(e => e.Id == id);
+
+            if (enclosure == null)
+            {
+                return NotFound();
+            }
+
+            var sunsetStatus = enclosure.Animals.Select(animal => new
+            {
+                Name = animal.Name,
+                Status = animal.ActivityPattern switch
+                {
+                    ActivityPatternEnum.Nocturnal => "Waking Up",
+                    ActivityPatternEnum.Diurnal => "Going to Sleep",
+                    _ => "Always Active"
+                }
+            });
+
+            ViewBag.SunsetStatus = sunsetStatus;
+
+            return View("ActionResult", enclosure);
+        }
+
+        // Feeding Time
+        public async Task<IActionResult> FeedingTime(int id)
+        {
+            var enclosure = await _context.Enclosures
+                .Include(e => e.Animals)
+                .FirstOrDefaultAsync(e => e.Id == id);
+
+            if (enclosure == null)
+            {
+                return NotFound();
+            }
+
+            var feedingSchedule = enclosure.Animals.Select(animal => new
+            {
+                Name = animal.Name,
+                Food = animal.DietaryClass switch
+                {
+                    DietaryClassEnum.Carnivore => "Eats other animals",
+                    DietaryClassEnum.Herbivore => "Eats plants",
+                    DietaryClassEnum.Omnivore => "Eats both plants and animals",
+                    DietaryClassEnum.Insectivore => "Eats insects",
+                    DietaryClassEnum.Piscivore => "Eats fish",
+                    _ => "Unknown"
+                }
+            });
+
+            ViewBag.FeedingSchedule = feedingSchedule;
+
+            return View("ActionResult", enclosure);
         }
     }
 }
