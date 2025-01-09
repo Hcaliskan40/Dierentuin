@@ -27,6 +27,23 @@
         <select asp-for="Size" asp-items="ViewBag.Sizes" class="form-control"></select>
         <span asp-validation-for="Size" class="text-danger"></span>
     </div>
+    <div class="form-group">
+        <label asp-for="SunriseAction"></label>
+        <select asp-for="SunriseAction" asp-items="ViewBag.ActionEnums" class="form-control"></select>
+        <span asp-validation-for="SunriseAction" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SunsetAction"></label>
+        <select asp-for="SunsetAction" asp-items="ViewBag.ActionEnums" class="form-control"></select>
+        <span asp-validation-for="SunsetAction" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="FeedingTime"></label>
+        <select asp-for="FeedingTime" asp-items="ViewBag.ActionEnums" class="form-control"></select>
+        <span asp-validation-for="FeedingTime" class="text-danger"></span>
+    </div>
 
     <div class="form-group">
         <label asp-for="DietaryClass"></label>

@@ -147,11 +147,18 @@ namespace Dierentuin.Controllers
             {
                 return NotFound();
             }
-            // Logic to handle sunrise (whether the animal wakes up)
-            animal.ActivityPattern = ActivityPatternEnum.Diurnal;  // Example
-            _context.SaveChanges();
-            return RedirectToAction(nameof(Index));
+
+            // Check if the animal wakes up based on its activity pattern
+            bool isAwake = animal.ActivityPattern == ActivityPatternEnum.Diurnal
+                           || animal.ActivityPattern == ActivityPatternEnum.Cathemeral;
+
+            ViewBag.IsAwakeMessage = isAwake
+                ? $"{animal.Name} is now awake!"
+                : $"{animal.Name} remains asleep.";
+
+            return View(animal);
         }
+
 
         // Action for Sunset
         public IActionResult Sunset(int id)
@@ -161,11 +168,18 @@ namespace Dierentuin.Controllers
             {
                 return NotFound();
             }
-            // Logic to handle sunset (whether the animal sleeps)
-            animal.ActivityPattern = ActivityPatternEnum.Nocturnal;  // Example
-            _context.SaveChanges();
-            return RedirectToAction(nameof(Index));
+
+            // Check if the animal goes to sleep based on its activity pattern
+            bool isAsleep = animal.ActivityPattern == ActivityPatternEnum.Nocturnal
+                            || animal.ActivityPattern == ActivityPatternEnum.Cathemeral;
+
+            ViewBag.IsAsleepMessage = isAsleep
+                ? $"{animal.Name} is now asleep!"
+                : $"{animal.Name} remains awake.";
+
+            return View(animal);
         }
+
 
         public IActionResult FeedingTime(int id)
         {
@@ -175,11 +189,18 @@ namespace Dierentuin.Controllers
                 return NotFound();
             }
 
-            // Logic to define feeding time behavior (what the animal eats)
-            string feedingInfo = $"{animal.Name} eats {animal.DietaryClass}.";
-            // In a more complex setup, you can implement food relationships with other animals here
+            // Define feeding behavior
+            string foodType = animal.DietaryClass switch
+            {
+                DietaryClassEnum.Carnivore => "meat",
+                DietaryClassEnum.Herbivore => "plants",
+                DietaryClassEnum.Omnivore => "plants and meat",
+                DietaryClassEnum.Insectivore => "insects",
+                DietaryClassEnum.Piscivore => "fish",
+                _ => "unknown food"
+            };
 
-            ViewBag.FeedingInfo = feedingInfo;
+            ViewBag.FeedingInfo = $"{animal.Name} eats {foodType}.";
             return View(animal);
         }
 
@@ -203,6 +224,44 @@ namespace Dierentuin.Controllers
             ViewBag.ConstraintsMessage = satisfiesConstraints ? "Constraints met!" : "Constraints niet voldaan!";
             return View(animal);
         }
+
+
+        public IActionResult Search(string searchTerm, ActivityPatternEnum? activityPattern, DietaryClassEnum? dietaryClass)
+        {
+            // Start met een queryable lijst van alle dieren
+            var animalsQuery = _context.Animals.Include(a => a.Category).AsQueryable();
+
+            // Zoektermfilter
+            if (!string.IsNullOrWhiteSpace(searchTerm))
+            {
+                animalsQuery = animalsQuery.Where(a => a.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase));
+            }
+
+            // Activiteitspatroonfilter
+            if (activityPattern.HasValue)
+            {
+                animalsQuery = animalsQuery.Where(a => a.ActivityPattern == activityPattern.Value);
+            }
+
+            // Dieetklassefilter
+            if (dietaryClass.HasValue)
+            {
+                animalsQuery = animalsQuery.Where(a => a.DietaryClass == dietaryClass.Value);
+            }
+
+            // Resultaten ophalen
+            var filteredAnimals = animalsQuery.ToList();
+
+            // Zoekcriteria opslaan in ViewData om de staat van het zoekformulier te behouden
+            ViewData["SearchTerm"] = searchTerm;
+            ViewData["SelectedActivityPattern"] = activityPattern;
+            ViewData["SelectedDietaryClass"] = dietaryClass;
+
+            // Retourneer de Index-view met de gefilterde lijst
+            return View("Index", filteredAnimals);
+        }
+
+
 
 
         // Delete - GET

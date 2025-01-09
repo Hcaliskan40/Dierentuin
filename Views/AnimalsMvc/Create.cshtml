@@ -1,43 +1,79 @@
 @model Dierentuin.Models.Animal
 
 <h2>Create Animal</h2>
-<form asp-action="Create" method="post">
-    <div class="form-group">
-        <label asp-for="Name"></label>
-        <input asp-for="Name" class="form-control" />
-        <span asp-validation-for="Name" class="text-danger"></span>
+<form asp-action="Create" method="post" class="needs-validation" novalidate>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" placeholder="Enter animal name" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label asp-for="Species"></label>
+            <input asp-for="Species" class="form-control" placeholder="Enter species name" />
+            <span asp-validation-for="Species" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label asp-for="CategoryId"></label>
+            <select asp-for="CategoryId" asp-items="ViewBag.Categories" class="form-control">
+                <option value="">Select a category</option>
+            </select>
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group col-md-4">
+            <label asp-for="Size"></label>
+            <select asp-for="Size" asp-items="ViewBag.Sizes" class="form-control">
+                <option value="">Select size</option>
+            </select>
+            <span asp-validation-for="Size" class="text-danger"></span>
+        </div>
+
+        <div class="form-group col-md-4">
+            <label asp-for="DietaryClass"></label>
+            <select asp-for="DietaryClass" asp-items="ViewBag.DietaryClasses" class="form-control">
+                <option value="">Select dietary class</option>
+            </select>
+            <span asp-validation-for="DietaryClass" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label asp-for="SunriseAction"></label>
+            <select asp-for="SunriseAction" asp-items="ViewBag.SunriseActions" class="form-control">
+                <option value="">Select sunrise action</option>
+            </select>
+            <span asp-validation-for="SunriseAction" class="text-danger"></span>
+        </div>
+
+        <div class="form-group col-md-4">
+            <label asp-for="SunsetAction"></label>
+            <select asp-for="SunsetAction" asp-items="ViewBag.SunsetActions" class="form-control">
+                <option value="">Select sunset action</option>
+            </select>
+            <span asp-validation-for="SunsetAction" class="text-danger"></span>
+        </div>
+
+        <div class="form-group col-md-4">
+            <label asp-for="FeedingTime"></label>
+            <input asp-for="FeedingTime" class="form-control" placeholder="Enter feeding time action" />
+            <span asp-validation-for="FeedingTime" class="text-danger"></span>
+        </div>
     </div>
 
     <div class="form-group">
-        <label asp-for="Species"></label>
-        <input asp-for="Species" class="form-control" />
-        <span asp-validation-for="Species" class="text-danger"></span>
+        <button type="submit" class="btn btn-primary">
+            <i class="fas fa-save"></i> Save Animal
+        </button>
+        <a asp-action="Index" class="btn btn-secondary">
+            <i class="fas fa-arrow-left"></i> Cancel
+        </a>
     </div>
-
-    <div class="form-group">
-        <label asp-for="CategoryId"></label>
-        <select asp-for="CategoryId" asp-items="ViewBag.Categories" class="form-control"></select>
-        <span asp-validation-for="CategoryId" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="Size"></label>
-        <select asp-for="Size" asp-items="ViewBag.Sizes" class="form-control"></select>
-        <span asp-validation-for="Size" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="DietaryClass"></label>
-        <select asp-for="DietaryClass" asp-items="ViewBag.DietaryClasses" class="form-control"></select>
-        <span asp-validation-for="DietaryClass" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="ActivityPattern"></label>
-        <select asp-for="ActivityPattern" asp-items="ViewBag.ActivityPatterns" class="form-control"></select>
-        <span asp-validation-for="ActivityPattern" class="text-danger"></span>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Save Animal</button>
 </form>
+
 
