@@ -5,19 +5,10 @@ namespace Dierentuin.Models
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
 
-        // Dieren in het verblijf
         public List<Animal> Animals { get; set; } = new List<Animal>();
-
-        // Klimaat van het verblijf (enum)
         public ClimateEnum Climate { get; set; }
-
-        // HabitatType van het verblijf (enum)
         public HabitatTypeEnum HabitatType { get; set; }
-
-        // Beveiligingsniveau van het verblijf (enum)
         public SecurityLevelEnum SecurityLevel { get; set; }
-
-        // Grootte van het verblijf in vierkante meters
         public double Size { get; set; }
     }
 

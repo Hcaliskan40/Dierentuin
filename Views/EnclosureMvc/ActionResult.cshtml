@@ -1,0 +1,70 @@
+@model Dierentuin.Models.Enclosure
+
+<h2>Action Results for @Model.Name</h2>
+
+@if (ViewBag.SunriseStatus != null)
+{
+<h3>Sunrise Status</h3>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Animal Name</th>
+        <th>Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in ViewBag.SunriseStatus)
+    {
+    <tr>
+        <td>@item.Name</td>
+        <td>@item.Status</td>
+    </tr>
+    }
+    </tbody>
+</table>
+}
+
+@if (ViewBag.SunsetStatus != null)
+{
+<h3>Sunset Status</h3>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Animal Name</th>
+        <th>Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in ViewBag.SunsetStatus)
+    {
+    <tr>
+        <td>@item.Name</td>
+        <td>@item.Status</td>
+    </tr>
+    }
+    </tbody>
+</table>
+}
+
+@if (ViewBag.FeedingSchedule != null)
+{
+<h3>Feeding Schedule</h3>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Animal Name</th>
+        <th>Food</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in ViewBag.FeedingSchedule)
+    {
+    <tr>
+        <td>@item.Name</td>
+        <td>@item.Food</td>
+    </tr>
+    }
+    </tbody>
+</table>
+}
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>

@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Update_at_09_01_2025,_16_26_[Changes]" date="1736436411493" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.Dierentuin/.idea/shelf/Uncommitted_changes_before_Update_at_09_01_2025,_16_26_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 09/01/2025, 16:26 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="dierentuin.db" />
+    <option name="AFTER_PATH" value="dierentuin.db" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Dierentuin/.idea/shelf/Uncommitted_changes_before_Update_at_09_01_2025,_16_26_[Changes]/dierentuin.db" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="obj/Debug/net8.0/Dierentuin.AssemblyInfoInputs.cache" />
+    <option name="AFTER_PATH" value="obj/Debug/net8.0/Dierentuin.AssemblyInfoInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Dierentuin/.idea/shelf/Uncommitted_changes_before_Update_at_09_01_2025,_16_26_[Changes]/Dierentuin.AssemblyInfoInputs.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="obj/project.nuget.cache" />
+    <option name="AFTER_PATH" value="obj/project.nuget.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Dierentuin/.idea/shelf/Uncommitted_changes_before_Update_at_09_01_2025,_16_26_[Changes]/project.nuget.cache" />
+  </binary>
+</changelist>
