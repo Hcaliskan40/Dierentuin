@@ -8,7 +8,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a86c62db-12aa-414a-b8d4-4eafe2dd8893" name="Changes" comment="" />
+    <list default="true" id="a86c62db-12aa-414a-b8d4-4eafe2dd8893" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dierentuin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dierentuin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Dierentuin.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Dierentuin.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Dierentuin.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/Dierentuin.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Dierentuin.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Dierentuin.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Dierentuin.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Dierentuin.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,27 +44,24 @@
     &quot;assignee&quot;: &quot;Hcaliskan40&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Hcaliskan40/Dierentuin.git",
-    "accountId": "1a668eea-f367-4ca1-b9fc-9160be66ccfc"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Hcaliskan40/Dierentuin.git&quot;,
+    &quot;accountId&quot;: &quot;1a668eea-f367-4ca1-b9fc-9160be66ccfc&quot;
   },
-  "recentNewPullRequestHead": {
-    "server": {
-      "useHttp": false,
-      "host": "github.com",
-      "port": null,
-      "suffix": null
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
     },
-    "owner": "Hcaliskan40",
-    "repository": "Dierentuin"
+    &quot;owner&quot;: &quot;Hcaliskan40&quot;,
+    &quot;repository&quot;: &quot;Dierentuin&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Models/Category.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/hamzacaliskan/RiderProjects/Dierentuin/obj/Debug/net8.0/Dierentuin.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/hamzacaliskan/RiderProjects/Dierentuin/obj/Debug/net8.0/Dierentuin.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/hamzacaliskan/RiderProjects/Dierentuin/obj/Debug/net8.0/Dierentuin.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -74,6 +79,7 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Hamza",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -124,6 +130,7 @@
       <updated>1736434032451</updated>
       <workItem from="1736434033515" duration="451000" />
       <workItem from="1736434488467" duration="8011000" />
+      <workItem from="1736444878797" duration="1624000" />
     </task>
     <task id="LOCAL-00001" summary="ENclosure begin">
       <option name="closed" value="true" />
