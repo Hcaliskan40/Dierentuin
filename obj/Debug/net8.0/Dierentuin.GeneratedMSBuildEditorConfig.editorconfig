@@ -1,120 +1,111 @@
 is_global = true
 build_property.TargetFramework = net8.0
-build_property.TargetFramework = net8.0
-build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
-build_property.UsingMicrosoftNETSdkWeb = true
-build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
-build_property.InvariantGlobalization = 
-build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
-build_property.EnforceExtendedAnalyzerRules = 
-build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Dierentuin
 build_property.RootNamespace = Dierentuin
-build_property.ProjectDir = /Users/hamzacaliskan/RiderProjects/Dierentuin/
+build_property.ProjectDir = C:\Users\Hp\source\repos\Dierentuin\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/hamzacaliskan/RiderProjects/Dierentuin
+build_property.MSBuildProjectDirectory = C:\Users\Hp\source\repos\Dierentuin
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Animals/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQW5pbWFscy9JbmRleC5jc2h0bWw=
+[C:/Users/Hp/source/repos/Dierentuin/Views/AnimalsMvc/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc012Y1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/AnimalsMvc/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQW5pbWFsc012Yy9DcmVhdGUuY3NodG1s
+[C:/Users/Hp/source/repos/Dierentuin/Views/AnimalsMvc/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc012Y1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/AnimalsMvc/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQW5pbWFsc012Yy9EZWxldGUuY3NodG1s
+[C:/Users/Hp/source/repos/Dierentuin/Views/AnimalsMvc/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc012Y1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/AnimalsMvc/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQW5pbWFsc012Yy9FZGl0LmNzaHRtbA==
+[C:/Users/Hp/source/repos/Dierentuin/Views/AnimalsMvc/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc012Y1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/AnimalsMvc/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQW5pbWFsc012Yy9JbmRleC5jc2h0bWw=
+[C:/Users/Hp/source/repos/Dierentuin/Views/Animals/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Categories/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9DcmVhdGUuY3NodG1s
+[C:/Users/Hp/source/repos/Dierentuin/Views/Categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Categories/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9EZWxldGUuY3NodG1s
+[C:/Users/Hp/source/repos/Dierentuin/Views/Categories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Categories/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9EZXRhaWxzLmNzaHRtbA==
+[C:/Users/Hp/source/repos/Dierentuin/Views/Categories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Categories/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9FZGl0LmNzaHRtbA==
+[C:/Users/Hp/source/repos/Dierentuin/Views/Categories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Categories/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9JbmRleC5jc2h0bWw=
+[C:/Users/Hp/source/repos/Dierentuin/Views/Categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/EnclosureMvc/ActionResult.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW5jbG9zdXJlTXZjL0FjdGlvblJlc3VsdC5jc2h0bWw=
+[C:/Users/Hp/source/repos/Dierentuin/Views/EnclosureMvc/ActionResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jbG9zdXJlTXZjXEFjdGlvblJlc3VsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/EnclosureMvc/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW5jbG9zdXJlTXZjL0NyZWF0ZS5jc2h0bWw=
+[C:/Users/Hp/source/repos/Dierentuin/Views/EnclosureMvc/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jbG9zdXJlTXZjXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/EnclosureMvc/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW5jbG9zdXJlTXZjL0RlbGV0ZS5jc2h0bWw=
+[C:/Users/Hp/source/repos/Dierentuin/Views/EnclosureMvc/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jbG9zdXJlTXZjXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/EnclosureMvc/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW5jbG9zdXJlTXZjL0RldGFpbHMuY3NodG1s
+[C:/Users/Hp/source/repos/Dierentuin/Views/EnclosureMvc/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jbG9zdXJlTXZjXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/EnclosureMvc/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW5jbG9zdXJlTXZjL0VkaXQuY3NodG1s
+[C:/Users/Hp/source/repos/Dierentuin/Views/EnclosureMvc/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jbG9zdXJlTXZjXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/EnclosureMvc/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW5jbG9zdXJlTXZjL0luZGV4LmNzaHRtbA==
+[C:/Users/Hp/source/repos/Dierentuin/Views/EnclosureMvc/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5jbG9zdXJlTXZjXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[C:/Users/Hp/source/repos/Dierentuin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[C:/Users/Hp/source/repos/Dierentuin/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[C:/Users/Hp/source/repos/Dierentuin/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/Hp/source/repos/Dierentuin/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/Hp/source/repos/Dierentuin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/Hp/source/repos/Dierentuin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-qde96f1crs
+[C:/Users/Hp/source/repos/Dierentuin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-b99ok4z0wl
