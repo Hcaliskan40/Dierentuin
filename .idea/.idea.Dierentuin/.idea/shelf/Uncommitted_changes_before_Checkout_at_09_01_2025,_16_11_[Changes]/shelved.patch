@@ -1,0 +1,144 @@
+Index: obj/Debug/net8.0/Dierentuin.GeneratedMSBuildEditorConfig.editorconfig
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>is_global = true\nbuild_property.TargetFramework = net8.0\nbuild_property.TargetFramework = net8.0\nbuild_property.TargetPlatformMinVersion = \nbuild_property.TargetPlatformMinVersion = \nbuild_property.UsingMicrosoftNETSdkWeb = true\nbuild_property.UsingMicrosoftNETSdkWeb = true\nbuild_property.ProjectTypeGuids = \nbuild_property.ProjectTypeGuids = \nbuild_property.InvariantGlobalization = \nbuild_property.InvariantGlobalization = \nbuild_property.PlatformNeutralAssembly = \nbuild_property.PlatformNeutralAssembly = \nbuild_property.EnforceExtendedAnalyzerRules = \nbuild_property.EnforceExtendedAnalyzerRules = \nbuild_property._SupportedPlatformList = Linux,macOS,Windows\nbuild_property._SupportedPlatformList = Linux,macOS,Windows\nbuild_property.RootNamespace = Dierentuin\nbuild_property.RootNamespace = Dierentuin\nbuild_property.ProjectDir = C:\\Users\\Hp\\source\\repos\\Dierentuin\\\nbuild_property.EnableComHosting = \nbuild_property.EnableGeneratedComInterfaceComImportInterop = \nbuild_property.RazorLangVersion = 8.0\nbuild_property.SupportLocalizedComponentNames = \nbuild_property.GenerateRazorMetadataSourceChecksumAttributes = \nbuild_property.MSBuildProjectDirectory = C:\\Users\\Hp\\source\\repos\\Dierentuin\nbuild_property._RazorSourceGeneratorDebug = \n\n[C:/Users/Hp/source/repos/Dierentuin/Views/AnimalsMvc/Create.cshtml]\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc012Y1xDcmVhdGUuY3NodG1s\nbuild_metadata.AdditionalFiles.CssScope = \n\n[C:/Users/Hp/source/repos/Dierentuin/Views/AnimalsMvc/Delete.cshtml]\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc012Y1xEZWxldGUuY3NodG1s\nbuild_metadata.AdditionalFiles.CssScope = \n\n[C:/Users/Hp/source/repos/Dierentuin/Views/AnimalsMvc/Edit.cshtml]\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc012Y1xFZGl0LmNzaHRtbA==\nbuild_metadata.AdditionalFiles.CssScope = \n\n[C:/Users/Hp/source/repos/Dierentuin/Views/AnimalsMvc/Index.cshtml]\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc012Y1xJbmRleC5jc2h0bWw=\nbuild_metadata.AdditionalFiles.CssScope = \n\n[C:/Users/Hp/source/repos/Dierentuin/Views/Animals/Index.cshtml]\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc1xJbmRleC5jc2h0bWw=\nbuild_metadata.AdditionalFiles.CssScope = \n\n[C:/Users/Hp/source/repos/Dierentuin/Views/Categories/Create.cshtml]\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s\nbuild_metadata.AdditionalFiles.CssScope = \n\n[C:/Users/Hp/source/repos/Dierentuin/Views/Categories/Delete.cshtml]\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s\nbuild_metadata.AdditionalFiles.CssScope = \n\n[C:/Users/Hp/source/repos/Dierentuin/Views/Categories/Details.cshtml]\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==\nbuild_metadata.AdditionalFiles.CssScope = \n\n[C:/Users/Hp/source/repos/Dierentuin/Views/Categories/Edit.cshtml]\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==\nbuild_metadata.AdditionalFiles.CssScope = \n\n[C:/Users/Hp/source/repos/Dierentuin/Views/Categories/Index.cshtml]\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=\nbuild_metadata.AdditionalFiles.CssScope = \n\n[C:/Users/Hp/source/repos/Dierentuin/Views/Home/Index.cshtml]\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=\nbuild_metadata.AdditionalFiles.CssScope = \n\n[C:/Users/Hp/source/repos/Dierentuin/Views/Home/Privacy.cshtml]\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==\nbuild_metadata.AdditionalFiles.CssScope = \n\n[C:/Users/Hp/source/repos/Dierentuin/Views/Shared/Error.cshtml]\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==\nbuild_metadata.AdditionalFiles.CssScope = \n\n[C:/Users/Hp/source/repos/Dierentuin/Views/Shared/_ValidationScriptsPartial.cshtml]\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s\nbuild_metadata.AdditionalFiles.CssScope = \n\n[C:/Users/Hp/source/repos/Dierentuin/Views/_ViewImports.cshtml]\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==\nbuild_metadata.AdditionalFiles.CssScope = \n\n[C:/Users/Hp/source/repos/Dierentuin/Views/_ViewStart.cshtml]\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=\nbuild_metadata.AdditionalFiles.CssScope = \n\n[C:/Users/Hp/source/repos/Dierentuin/Views/Shared/_Layout.cshtml]\nbuild_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s\nbuild_metadata.AdditionalFiles.CssScope = b-b99ok4z0wl\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/obj/Debug/net8.0/Dierentuin.GeneratedMSBuildEditorConfig.editorconfig b/obj/Debug/net8.0/Dierentuin.GeneratedMSBuildEditorConfig.editorconfig
+--- a/obj/Debug/net8.0/Dierentuin.GeneratedMSBuildEditorConfig.editorconfig	(revision 358e9ae863dd01a0b78cb77339c74dbacee87294)
++++ b/obj/Debug/net8.0/Dierentuin.GeneratedMSBuildEditorConfig.editorconfig	(date 1736435467259)
+@@ -1,95 +1,88 @@
+ is_global = true
+ build_property.TargetFramework = net8.0
+-build_property.TargetFramework = net8.0
+-build_property.TargetPlatformMinVersion = 
+ build_property.TargetPlatformMinVersion = 
+ build_property.UsingMicrosoftNETSdkWeb = true
+-build_property.UsingMicrosoftNETSdkWeb = true
+-build_property.ProjectTypeGuids = 
+ build_property.ProjectTypeGuids = 
+ build_property.InvariantGlobalization = 
+-build_property.InvariantGlobalization = 
+-build_property.PlatformNeutralAssembly = 
+ build_property.PlatformNeutralAssembly = 
+ build_property.EnforceExtendedAnalyzerRules = 
+-build_property.EnforceExtendedAnalyzerRules = 
+-build_property._SupportedPlatformList = Linux,macOS,Windows
+ build_property._SupportedPlatformList = Linux,macOS,Windows
+ build_property.RootNamespace = Dierentuin
+ build_property.RootNamespace = Dierentuin
+-build_property.ProjectDir = C:\Users\Hp\source\repos\Dierentuin\
++build_property.ProjectDir = /Users/hamzacaliskan/RiderProjects/Dierentuin/
+ build_property.EnableComHosting = 
+ build_property.EnableGeneratedComInterfaceComImportInterop = 
+ build_property.RazorLangVersion = 8.0
+ build_property.SupportLocalizedComponentNames = 
+ build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+-build_property.MSBuildProjectDirectory = C:\Users\Hp\source\repos\Dierentuin
++build_property.MSBuildProjectDirectory = /Users/hamzacaliskan/RiderProjects/Dierentuin
+ build_property._RazorSourceGeneratorDebug = 
++build_property.EffectiveAnalysisLevelStyle = 8.0
+ 
+-[C:/Users/Hp/source/repos/Dierentuin/Views/AnimalsMvc/Create.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc012Y1xDcmVhdGUuY3NodG1s
++[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Animals/Index.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQW5pbWFscy9JbmRleC5jc2h0bWw=
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[C:/Users/Hp/source/repos/Dierentuin/Views/AnimalsMvc/Delete.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc012Y1xEZWxldGUuY3NodG1s
++[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/AnimalsMvc/Create.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQW5pbWFsc012Yy9DcmVhdGUuY3NodG1s
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[C:/Users/Hp/source/repos/Dierentuin/Views/AnimalsMvc/Edit.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc012Y1xFZGl0LmNzaHRtbA==
++[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/AnimalsMvc/Delete.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQW5pbWFsc012Yy9EZWxldGUuY3NodG1s
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[C:/Users/Hp/source/repos/Dierentuin/Views/AnimalsMvc/Index.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc012Y1xJbmRleC5jc2h0bWw=
++[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/AnimalsMvc/Edit.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQW5pbWFsc012Yy9FZGl0LmNzaHRtbA==
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[C:/Users/Hp/source/repos/Dierentuin/Views/Animals/Index.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc1xJbmRleC5jc2h0bWw=
++[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/AnimalsMvc/Index.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQW5pbWFsc012Yy9JbmRleC5jc2h0bWw=
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[C:/Users/Hp/source/repos/Dierentuin/Views/Categories/Create.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
++[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Categories/Create.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9DcmVhdGUuY3NodG1s
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[C:/Users/Hp/source/repos/Dierentuin/Views/Categories/Delete.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
++[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Categories/Delete.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9EZWxldGUuY3NodG1s
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[C:/Users/Hp/source/repos/Dierentuin/Views/Categories/Details.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
++[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Categories/Details.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9EZXRhaWxzLmNzaHRtbA==
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[C:/Users/Hp/source/repos/Dierentuin/Views/Categories/Edit.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
++[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Categories/Edit.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9FZGl0LmNzaHRtbA==
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[C:/Users/Hp/source/repos/Dierentuin/Views/Categories/Index.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
++[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Categories/Index.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9JbmRleC5jc2h0bWw=
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[C:/Users/Hp/source/repos/Dierentuin/Views/Home/Index.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
++[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Home/Index.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[C:/Users/Hp/source/repos/Dierentuin/Views/Home/Privacy.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
++[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Home/Privacy.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[C:/Users/Hp/source/repos/Dierentuin/Views/Shared/Error.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
++[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Shared/Error.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[C:/Users/Hp/source/repos/Dierentuin/Views/Shared/_ValidationScriptsPartial.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
++[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Shared/_ValidationScriptsPartial.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[C:/Users/Hp/source/repos/Dierentuin/Views/_ViewImports.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
++[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/_ViewImports.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[C:/Users/Hp/source/repos/Dierentuin/Views/_ViewStart.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
++[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/_ViewStart.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+ build_metadata.AdditionalFiles.CssScope = 
+ 
+-[C:/Users/Hp/source/repos/Dierentuin/Views/Shared/_Layout.cshtml]
+-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+-build_metadata.AdditionalFiles.CssScope = b-b99ok4z0wl
++[/Users/hamzacaliskan/RiderProjects/Dierentuin/Views/Shared/_Layout.cshtml]
++build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
++build_metadata.AdditionalFiles.CssScope = b-qde96f1crs

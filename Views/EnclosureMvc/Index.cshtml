@@ -1,0 +1,45 @@
+@model IEnumerable<Dierentuin.Models.Enclosure>
+
+<h2>Enclosures</h2>
+
+<form method="get" asp-action="Index" class="mb-3">
+    <div class="input-group">
+        <input type="text" name="search" class="form-control" placeholder="Search Enclosures..." />
+        <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+</form>
+<a asp-action="Create" class="btn btn-primary mb-3">Add New Enclosure</a>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Climate</th>
+        <th>Habitat Type</th>
+        <th>Security Level</th>
+        <th>Size (m²)</th>
+        <th>Animal Count</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var enclosure in Model)
+    {
+    <tr>
+        <td>@enclosure.Name</td>
+        <td>@enclosure.Climate</td>
+        <td>@enclosure.HabitatType</td>
+        <td>@enclosure.SecurityLevel</td>
+        <td>@enclosure.Size</td>
+        <td>@enclosure.Animals.Count</td>
+        <td>
+            <a asp-action="Edit" asp-route-id="@enclosure.Id" class="btn btn-warning">Edit</a>
+            <a asp-action="Delete" asp-route-id="@enclosure.Id" class="btn btn-danger">Delete</a>
+            <a asp-action="Sunrise" asp-route-id="@enclosure.Id" class="btn btn-success">Sunrise</a>
+            <a asp-action="Sunset" asp-route-id="@enclosure.Id" class="btn btn-dark">Sunset</a>
+            <a asp-action="FeedingTime" asp-route-id="@enclosure.Id" class="btn btn-primary">Feeding Time</a>
+        </td>
+    </tr>
+    }
+    </tbody>
+</table>

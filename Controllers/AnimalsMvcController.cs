@@ -18,12 +18,10 @@ namespace Dierentuin.Controllers
             _logger = logger;
         }
 
-
-
         // Index - Lijst van alle dieren
         public async Task<IActionResult> Index()
         {
-            var animals = await _context.Animals.Include(a => a.Category).ToListAsync();
+            var animals = await _context.Animals.Include(a => a.Category).Include(a => a.Enclosure).ToListAsync();
             return View(animals);
         }
 
@@ -38,6 +36,9 @@ namespace Dierentuin.Controllers
             ViewBag.Sizes = new SelectList(Enum.GetValues(typeof(SizeEnum)), SizeEnum.Small);
             ViewBag.DietaryClasses = new SelectList(Enum.GetValues(typeof(DietaryClassEnum)), DietaryClassEnum.Herbivore);
             ViewBag.ActivityPatterns = new SelectList(Enum.GetValues(typeof(ActivityPatternEnum)), ActivityPatternEnum.Nocturnal);
+
+            // Populating ViewBag for Enclosures (Add Enclosures dropdown)
+            ViewBag.Enclosures = new SelectList(_context.Enclosures, "Id", "Name");
 
             return View();
         }
@@ -68,6 +69,9 @@ namespace Dierentuin.Controllers
             ViewBag.DietaryClasses = new SelectList(Enum.GetValues(typeof(DietaryClassEnum)), animal.DietaryClass);
             ViewBag.ActivityPatterns = new SelectList(Enum.GetValues(typeof(ActivityPatternEnum)), animal.ActivityPattern);
 
+            // Repopulate Enclosures dropdown
+            ViewBag.Enclosures = new SelectList(_context.Enclosures, "Id", "Name", animal.EnclosureId);
+
             return View(animal); // Return the same view with validation errors
         }
 
@@ -89,9 +93,11 @@ namespace Dierentuin.Controllers
             ViewBag.DietaryClasses = new SelectList(Enum.GetValues(typeof(DietaryClassEnum)).Cast<DietaryClassEnum>(), animal.DietaryClass);
             ViewBag.ActivityPatterns = new SelectList(Enum.GetValues(typeof(ActivityPatternEnum)).Cast<ActivityPatternEnum>(), animal.ActivityPattern);
 
+            // Populate the ViewBag for Enclosures dropdown
+            ViewBag.Enclosures = new SelectList(_context.Enclosures, "Id", "Name", animal.EnclosureId);
+
             return View(animal);
         }
-
 
         // Edit - POST
         [HttpPost]
@@ -130,6 +136,9 @@ namespace Dierentuin.Controllers
             ViewBag.DietaryClasses = new SelectList(Enum.GetValues(typeof(DietaryClassEnum)).Cast<DietaryClassEnum>(), animal.DietaryClass);
             ViewBag.ActivityPatterns = new SelectList(Enum.GetValues(typeof(ActivityPatternEnum)).Cast<ActivityPatternEnum>(), animal.ActivityPattern);
 
+            // Repopulate Enclosures dropdown
+            ViewBag.Enclosures = new SelectList(_context.Enclosures, "Id", "Name", animal.EnclosureId);
+
             return View(animal);
         }
 
@@ -146,6 +155,7 @@ namespace Dierentuin.Controllers
             {
                 var animal = await _context.Animals
                     .Include(a => a.Category) // Include related data if necessary
+                    .Include(a => a.Enclosure) // Include Enclosure related data
                     .FirstOrDefaultAsync(a => a.Id == id);
 
                 if (animal == null)
@@ -191,4 +201,4 @@ namespace Dierentuin.Controllers
             }
         }
     }
-    }
+}

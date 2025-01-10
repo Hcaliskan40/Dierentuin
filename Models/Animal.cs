@@ -6,19 +6,17 @@
         public string Name { get; set; } = string.Empty;
         public string Species { get; set; } = string.Empty;
 
-        // Categorie van het dier (optioneel)
         public int? CategoryId { get; set; }
         public Category? Category { get; set; }
 
-        // Grootte van het dier (enum)
         public SizeEnum Size { get; set; }
-
-        // Voedingsklasse van het dier (enum)
         public DietaryClassEnum DietaryClass { get; set; }
-
-        // Activiteitspatroon van het dier (enum)
         public ActivityPatternEnum ActivityPattern { get; set; }
+
+        public int? EnclosureId { get; set; } // Nullable zodat we het later kunnen invullen
+        public Enclosure? Enclosure { get; set; }  // Relatie naar het Enclosure-model
     }
+    
 
     public enum SizeEnum
     {

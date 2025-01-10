@@ -7,14 +7,13 @@
 
 <h1>Categories</h1>
 
-<!-- Search and Filter Section -->
-<form method="get">
-    <div class="form-inline">
-        <label for="searchCategory" class="mr-2">Search Categories:</label>
-        <input type="text" name="searchCategory" id="searchCategory" class="form-control" placeholder="Search by category name..." value="@searchCategory" />
-        <button type="submit" class="btn btn-primary ml-2">Search</button>
+<form method="get" asp-action="Index" class="mb-3">
+    <div class="input-group">
+        <input type="text" name="search" class="form-control" placeholder="Search Animals..." />
+        <button type="submit" class="btn btn-primary">Search</button>
     </div>
 </form>
+
 
 <!-- Table of Categories -->
 <table class="table mt-3">
